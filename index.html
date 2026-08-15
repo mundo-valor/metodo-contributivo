@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método Contributivo · Modelo Mandelblatt‑Camacaro</title>
+<meta name="description" content="Landing page académica y profesional sobre el Método Contributivo y el Modelo Mandelblatt-Camacaro para la valuación inmobiliaria.">
+<style>
+:root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10243b;--ink:#eef5ff;--muted:#9fb3c8;--accent:#16c8c4;--accent2:#39d9e6;--line:#1e3651;--white:#fff;--warn:#ffc857;--radius:22px;--shadow:0 20px 60px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% -10%,rgba(22,200,196,.12),transparent 33%),radial-gradient(circle at 90% 0%,rgba(120,168,255,.16),transparent 31%),var(--bg);line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(120,168,255,.13)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;letter-spacing:.2px;font-size:20px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:28px;font-size:16.5px;color:var(--muted)}.navlinks a:hover{color:var(--ink)}.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 21px;border-radius:999px;border:1px solid var(--line);font-weight:750;font-size:15px}.btn.primary{background:linear-gradient(135deg,var(--accent),#75f5ee);color:#06151a;border:none;box-shadow:0 6px 18px rgba(22,200,196,.18)}.nav-cta{padding:14px 23px;font-size:15px;white-space:nowrap}.btn.secondary{background:rgba(255,255,255,.03)}.hero{padding:84px 0 55px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 11px;border:1px solid rgba(22,200,196,.25);border-radius:999px;color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}.hero h1{font-size:clamp(44px,6vw,76px);line-height:1.01;letter-spacing:-.045em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--accent)}.hero p.lead{font-size:20px;color:#cbd7e5;max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.model-card{background:linear-gradient(150deg,rgba(16,36,59,.96),rgba(13,27,45,.96));border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}.model-card:after{content:"";position:absolute;inset:auto -30% -60% 20%;height:220px;background:radial-gradient(circle,rgba(22,200,196,.18),transparent 65%)}.formula{font-family:"Cambria Math",Georgia,serif;font-size:26px;line-height:1.8;padding:18px 0;position:relative;z-index:1}.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 4px}.frac .top{border-bottom:1px solid #8ca1b7;padding:0 6px}.frac .bottom{padding:0 6px}.vars{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px;position:relative;z-index:1}.var{padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.12);font-size:13px;color:var(--muted)}.var b{display:block;color:var(--ink);margin-bottom:2px}.section{padding:52px 0}.section.alt{background:linear-gradient(180deg,transparent,rgba(16,36,59,.23),transparent)}.section-head{max-width:780px;margin-bottom:24px}.kicker{color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:12px}.section h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.035em;margin:9px 0 13px}.section-head p{color:var(--muted);font-size:17px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:rgba(13,27,45,.8);border:1px solid var(--line);padding:18px;border-radius:var(--radius)}.card .num{color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.card h3{margin:8px 0 8px;font-size:19px}.card p{color:var(--muted);margin:0}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.process.process-3{grid-template-columns:repeat(3,1fr);max-width:930px;margin-left:auto;margin-right:auto}.step{padding:14px;border-radius:18px;background:linear-gradient(180deg,rgba(120,168,255,.08),rgba(255,255,255,.025));border:1px solid var(--line)}.step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(22,200,196,.12);border:1px solid rgba(22,200,196,.25);color:var(--accent);font-weight:800}.step h4{margin:8px 0 5px}.step p{color:var(--muted);font-size:14px;margin:0}.table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:rgba(13,27,45,.76);align-self:start}.table-title{padding:16px 18px 10px;color:var(--ink);font-size:17px;font-weight:800;letter-spacing:-.01em}.table-subtitle{padding:0 18px 12px;color:var(--muted);font-size:12px}table{width:100%;border-collapse:collapse;min-width:0;table-layout:auto}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}th{background:rgba(120,168,255,.07);color:#d9e8fb;font-size:12px;text-transform:uppercase;letter-spacing:.08em;position:sticky;top:0}td{color:#c2d0df}tr:last-child td{border-bottom:none}.range{white-space:nowrap;color:var(--ink);font-weight:700}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(22,200,196,.09);color:var(--accent);font-size:12px;font-weight:800}.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}.quote{padding:24px;border-left:3px solid var(--accent);background:rgba(22,200,196,.055);border-radius:0 18px 18px 0;color:#d6e2ef}.eq-panel{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.formula-large{font-family:"Cambria Math",Georgia,serif;font-size:32px;padding:28px;border-radius:22px;background:#06101d;border:1px solid var(--line);overflow:auto;white-space:nowrap}.legend{display:grid;gap:10px}.legend div{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.legend b{color:var(--accent)}.examples{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.example{background:linear-gradient(145deg,rgba(13,27,45,.96),rgba(11,23,39,.9));border:1px solid var(--line);border-radius:22px;padding:23px;position:relative}.example.featured{grid-column:span 2}.tag{display:inline-flex;padding:5px 9px;border-radius:999px;background:rgba(120,168,255,.1);color:#b9d1ff;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.09em}.example h3{margin:12px 0 4px;font-size:21px}.example p{color:var(--muted);margin:7px 0 0;font-size:14px}.value{font-size:28px;font-weight:900;letter-spacing:-.03em;color:var(--accent);margin:15px 0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.metric{padding:10px;border:1px solid var(--line);border-radius:12px}.metric b{display:block;color:var(--ink);font-size:14px}.metric small{color:var(--muted);font-size:11px}.calc{display:grid;grid-template-columns:1fr 1fr;gap:20px}.formbox,.resultbox{border:1px solid var(--line);border-radius:22px;padding:22px;background:rgba(13,27,45,.82)}.field{display:grid;gap:6px;margin-bottom:13px}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #2a4766;background:#091625;color:var(--ink);font:inherit}.resultbox{display:flex;flex-direction:column;justify-content:center}.result{font-size:44px;font-weight:900;letter-spacing:-.04em;color:var(--accent);margin:8px 0}.subresult{font-size:14px;color:var(--muted)}.mini-note{font-size:12px;color:#89a0b5}.warning{margin-top:15px;color:#f1d79a;background:rgba(255,200,87,.07);border:1px solid rgba(255,200,87,.2);padding:12px 14px;border-radius:13px;font-size:13px}.source{font-size:12px;color:#7f94aa}.cta{padding:60px 0 90px}.cta-box{display:flex;justify-content:space-between;gap:30px;align-items:center;padding:32px;border-radius:28px;border:1px solid rgba(22,200,196,.18);background:linear-gradient(120deg,rgba(22,200,196,.09),rgba(120,168,255,.08))}.cta h2{margin:0 0 8px;font-size:32px}.cta p{margin:0;color:var(--muted)}.chart-card{margin-top:20px;border:1px solid var(--line);border-radius:22px;padding:22px;background:rgba(13,27,45,.82)}#ageChart{width:100%;height:auto;display:block;background:linear-gradient(180deg,rgba(22,200,196,.035),rgba(255,255,255,.01));border-radius:16px;border:1px solid var(--line)}.chart-meta{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:12px}.chart-meta span{display:inline-flex;align-items:center;gap:7px}.chart-meta i{width:10px;height:3px;background:var(--accent);display:inline-block;border-radius:3px}.donation-box{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:32px;border-radius:28px;border:1px solid rgba(22,200,196,.25);background:linear-gradient(120deg,rgba(22,200,196,.11),rgba(57,217,230,.06));box-shadow:0 18px 55px rgba(0,0,0,.18)}.donation-box h2{margin:8px 0 8px;font-size:32px}.donation-box p{margin:0;color:var(--muted);max-width:760px}.donate-btn{min-width:190px;justify-content:center}.donate-btn span{font-size:16px}@media(max-width:900px){.donation-box{flex-direction:column;align-items:flex-start}}footer{border-top:1px solid var(--line);padding:26px 0;color:#7f94aa;font-size:12px}.muted{color:var(--muted)}
+@media(max-width:900px){.hero-grid,.eq-panel,.calc,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.process,.process.process-3{grid-template-columns:repeat(2,1fr)}.examples{grid-template-columns:1fr}.example.featured{grid-column:span 1}.navlinks{display:none}.cta-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}.hero{padding-top:54px}.hero h1{font-size:46px}.vars,.metrics{grid-template-columns:1fr}.process{grid-template-columns:1fr}.section{padding:56px 0}}
+</style>
+
+<style id="ui-tweaks">
+.calc-actions{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:10px;margin-top:18px;align-items:stretch}.calc-actions .btn{min-height:54px;padding:12px 16px;font-size:14px;line-height:1.2;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.18)}.calc-actions .btn.secondary{background:#12263d;color:#eef5ff;border:1px solid #3a5877}.calc-actions .btn.secondary:hover{border-color:var(--accent);color:#fff;background:#17314c}.calc-actions .print-btn{border-color:#dce7f2;background:#14283e;color:#fff}.reset-note{margin-top:9px;font-size:11px;color:#89a0b5}.type-note{font-size:11px;color:#89a0b5;margin-top:5px}.type-input{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #2a4766;background:#091625;color:var(--ink);font:inherit}.type-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(22,200,196,.10)}@media(max-width:760px){.calc-actions{grid-template-columns:1fr}.calc-actions .btn{min-height:48px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#top">Método <span>Contributivo</span></a><nav class="navlinks"><a href="#metodo">Método</a><a href="#modelo">Modelo</a><a href="#tablas">Tablas</a><a href="#calculadora">Calculadora</a><a href="#donar">Donar</a></nav><a class="btn primary nav-cta" href="#calculadora">Probar modelo</a></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Valuación inmobiliaria · enfoque alternativo</span><h1>Valorar cuando el mercado <em>no habla</em>.</h1><p class="lead">El Método Contributivo y el Modelo Mandelblatt‑Camacaro integran la contribución del terreno, la construcción depreciada y, cuando corresponde, las máquinas y equipos para estimar el valor inmobiliario de mercado.</p><div class="actions"><a class="btn primary" href="#modelo">Ver el modelo</a><a class="btn secondary" href="#tablas">Ver tablas</a></div><p class="source" style="margin-top:18px">Base académica: Capítulo 5, “El Método Contributivo en los Avalúos Inmobiliarios”, Miguel Camacaro Pérez, M.Sc.</p></div><aside class="model-card"><div class="kicker">Ecuación central</div><div class="formula">V<sub>i</sub> = <span class="frac"><span class="top">[V<sub>cn</sub>(1 − δF<sub>r</sub>) + V<sub>me</sub>]F<sub>C</sub></span><span class="bottom">1 − C<sub>t</sub>F<sub>C</sub></span></span></div><div class="vars"><div class="var"><b>V<sub>i</sub></b>valor del inmueble</div><div class="var"><b>V<sub>cn</sub></b>construcción nueva</div><div class="var"><b>δ</b>factor de depreciación</div><div class="var"><b>F<sub>r</sub></b>factor de rescate</div><div class="var"><b>V<sub>me</sub></b>máquinas y equipos</div><div class="var"><b>C<sub>t</sub> · F<sub>C</sub></b>contribución y comercialización</div></div></aside></div></section>
+
+<section class="section alt" id="metodo"><div class="wrap"><div class="section-head"><div class="kicker">01 · Método</div><h2>Una alternativa fundada en el principio de contribución</h2><p>El valor de un componente se mide por su aportación al valor de toda la propiedad. El capítulo desarrolla el método a partir del Método Evolutivo y lo utiliza cuando existen limitaciones para aplicar con solvencia el método comparativo.</p></div><div class="cards"><article class="card"><div class="num">01 · Tierra</div><h3>Contribución del suelo</h3><p>La tierra entra como una proporción C<sub>t</sub> del valor inmobiliario. Su selección debe apoyarse en investigación de mercado.</p></article><article class="card"><div class="num">02 · Construcción</div><h3>Reposición depreciada</h3><p>La construcción nueva V<sub>cn</sub> se ajusta mediante δ, incorporando edad, vida útil, estado de conservación y rescate.</p></article><article class="card"><div class="num">03 · Mercado</div><h3>Factor de comercialización</h3><p>F<sub>C</sub> recoge la mayor o menor liquidez relativa del mercado para inmuebles similares en la fecha de valoración.</p></article></div><div class="process process-3" style="margin-top:22px"><div class="step"><div class="n">1</div><h4>Medir</h4><p>Áreas, tipologías, bienhechurías, equipos y condición física.</p></div><div class="step"><div class="n">2</div><h4>Costear</h4><p>Determinar el costo nuevo de reproducción o reposición.</p></div><div class="step"><div class="n">3</div><h4>Depreciar y valorar</h4><p>Aplicar Ross‑Heidecke, rescate y, cuando corresponde, incorporar equipos; después resolver el Modelo Mandelblatt‑Camacaro.</p></div></div></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+
+<section class="section" id="modelo"><div class="wrap"><div class="section-head"><div class="kicker">02 · Modelo</div><h2>Mandelblatt‑Camacaro: del principio a la ecuación</h2><p>La formulación parte de la relación Vi = (Vt + Vc + Vme) × FC y despeja el valor inmobiliario incorporando la contribución porcentual del terreno y la depreciación de la construcción.</p></div><div class="eq-panel"><div><div class="formula-large">V<sub>i</sub> = <span class="frac"><span class="top">[V<sub>cn</sub> × (1 − δ × F<sub>r</sub>) + V<sub>me</sub>] × F<sub>C</sub></span><span class="bottom">1 − C<sub>t</sub> × F<sub>C</sub></span></span></div><div class="quote" style="margin-top:15px">La fórmula permite calcular el valor del inmueble residencial o comercial en función del área construida, costo unitario, depreciación, contribución del terreno y coeficiente de mercado.</div></div><div class="legend"><div><b>C<sub>t</sub></b><br><span class="muted">Contribución del valor de la tierra.</span></div><div><b>F<sub>C</sub></b><br><span class="muted">Factor de comercialización/mercado.</span></div><div><b>δ</b><br><span class="muted">Depreciación de la construcción.</span></div><div><b>F<sub>r</sub> = 1 − r</b><br><span class="muted">Factor de rescate.</span></div><div><b>V<sub>me</sub></b><br><span class="muted">Valor actual de máquinas y equipos cuando su incorporación es admisible.</span></div></div></div><p class="source" style="margin-top:15px">El capítulo señala que el modelo es determinístico cuando se fija un valor puntual para sus factores y que puede plantearse bajo escenarios probabilísticos mediante simulación de Monte Carlo.</p></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+
+<section class="section alt" id="tablas"><div class="wrap"><div class="section-head"><div class="kicker">03 · Tablas de referencia</div><h2>Rangos sugeridos para C<sub>t</sub>, F<sub>C</sub>, PlusDep y vida útil</h2><p>Las tablas permiten seleccionar los parámetros que alimentan la depreciación Ross‑Heidecke y el Modelo Mandelblatt‑Camacaro.</p></div><div class="table-wrap"><div class="table-title">Tabla 1 · Factores de contribución y comercialización</div><div class="table-subtitle">Valores sugeridos para inmuebles nuevos o de reciente construcción (edad aparente &lt; 10 años). Haz clic en una fila para usar esa tipología en la calculadora.</div><table><thead><tr><th>Tipo de construcción</th><th>C<sub>t</sub> mínimo</th><th>C<sub>t</sub> máximo</th><th>F<sub>C</sub> mínimo</th><th>F<sub>C</sub> máximo</th></tr></thead><tbody>
+<tr class="selectable-row" data-type="unif_basica" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Básica</td><td class="range">5%</td><td class="range">10%</td><td>1,20</td><td>1,25</td></tr><tr class="selectable-row" data-type="unif_media" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Media</td><td class="range">10%</td><td class="range">20%</td><td>1,25</td><td>1,35</td></tr><tr class="selectable-row" data-type="unif_alta" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Alta</td><td class="range">20%</td><td class="range">40%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="multi_basica" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Básica</td><td class="range">15%</td><td class="range">20%</td><td>1,25</td><td>1,30</td></tr><tr class="selectable-row" data-type="multi_media" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Media</td><td class="range">25%</td><td class="range">30%</td><td>1,30</td><td>1,35</td></tr><tr class="selectable-row" data-type="multi_alta" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Alta</td><td class="range">35%</td><td class="range">40%</td><td>1,40</td><td>1,45</td></tr><tr class="selectable-row" data-type="local" title="Seleccionar esta tipología"><td>Local comercial</td><td class="range">30%</td><td class="range">50%</td><td>1,40</td><td>1,50</td></tr><tr class="selectable-row" data-type="oficina" title="Seleccionar esta tipología"><td>Oficina</td><td class="range">25%</td><td class="range">40%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="galpon_comercial" title="Seleccionar esta tipología"><td>Galpón comercial</td><td class="range">20%</td><td class="range">35%</td><td>1,30</td><td>1,45</td></tr><tr class="selectable-row" data-type="galpon_industrial" title="Seleccionar esta tipología"><td>Galpón industrial</td><td class="range">10%</td><td class="range">20%</td><td>1,25</td><td>1,35</td></tr><tr class="selectable-row" data-type="mixto_cr" title="Seleccionar esta tipología"><td>Mixto comercial-residencial</td><td class="range">20%</td><td class="range">30%</td><td>1,30</td><td>1,40</td></tr><tr class="selectable-row" data-type="mixto_ci" title="Seleccionar esta tipología"><td>Mixto comercial-industrial</td><td class="range">20%</td><td class="range">35%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="hotel" title="Seleccionar esta tipología"><td>Hotel</td><td class="range">40%</td><td class="range">50%</td><td>1,50</td><td>1,60</td></tr>
+</tbody></table></div><div class="split" style="margin-top:20px"><div class="table-wrap"><div class="table-title">Tabla 2 · Criterio de Heideck / PlusDep</div><div class="table-subtitle">Factor de depreciación por condición utilizado en la versión actual de la aplicación.</div><table><thead><tr><th>Estado</th><th>Condición</th><th>PlusDep</th></tr></thead><tbody><tr><td>1</td><td>Óptimo</td><td>0,00%</td></tr><tr><td>1,5</td><td>Muy bueno</td><td>0,32%</td></tr><tr><td>2</td><td>Bueno</td><td>2,49%</td></tr><tr><td>2,5</td><td>Intermedio</td><td>8,09%</td></tr><tr><td>3</td><td>Regular</td><td>18,17%</td></tr><tr><td>3,5</td><td>Deficiente</td><td>33,09%</td></tr><tr><td>4</td><td>Malo</td><td>52,49%</td></tr><tr><td>4,5</td><td>Muy malo</td><td>75,32%</td></tr><tr><td>5</td><td>Demolición</td><td>100,00%</td></tr></tbody></table></div><div class="table-wrap"><div class="table-title">Tabla 3 · Vida útil de las construcciones</div><div class="table-subtitle">Rangos utilizados como referencia para la selección de la vida útil.</div><table><thead><tr><th>Tipo de inmueble</th><th>Vida útil mín.</th><th>Vida útil máx.</th></tr></thead><tbody><tr><td>Unifamiliar básica/media</td><td>50 años</td><td>60 años</td></tr><tr><td>Unifamiliar alta</td><td>60 años</td><td>75 años</td></tr><tr><td>Multifamiliar básica/media</td><td>50 años</td><td>60 años</td></tr><tr><td>Multifamiliar alta</td><td>60 años</td><td>75 años</td></tr><tr><td>Local comercial / Oficina</td><td>60 años</td><td>75 años</td></tr><tr><td>Galpón comercial/industrial</td><td>50 años</td><td>60 años</td></tr><tr><td>Mixto / Hotel</td><td>60 años</td><td>75 años</td></tr></tbody></table></div></div><p class="source" style="margin-top:14px">Fuente: elaboración y tablas reproducidas de forma resumida a partir del Capítulo 5.</p></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+
+<section class="section alt" id="calculadora"><div class="wrap"><div class="section-head"><div class="kicker">04 · Calculadora Ross‑Heidecke + Mandelblatt‑Camacaro</div><h2>Ahora la depreciación se determina desde la inspección</h2><p>El usuario completa la <strong>edad aparente</strong>, la <strong>vida útil</strong> y el <strong>estado de conservación</strong>. La aplicación calcula automáticamente <strong>α (Ross)</strong>, toma el <strong>PlusDep</strong> de la tabla cargada y obtiene la depreciación <strong>δ = α + (1 − α)c</strong> antes de aplicarla al Modelo Mandelblatt‑Camacaro.</p></div><div class="calc"><div class="formbox"><div class="field"><label>Tipo de inmueble</label><input id="tipo" class="type-input" list="tipoOpciones" value="Vivienda unifamiliar · Media" autocomplete="off" placeholder="Seleccione de la tabla o escriba su tipo de inmueble"><datalist id="tipoOpciones"><option value="Vivienda unifamiliar · Básica"></option><option value="Vivienda unifamiliar · Media"></option><option value="Vivienda unifamiliar · Alta"></option><option value="Vivienda multifamiliar · Básica"></option><option value="Vivienda multifamiliar · Media"></option><option value="Vivienda multifamiliar · Alta"></option><option value="Local comercial"></option><option value="Oficina"></option><option value="Galpón comercial"></option><option value="Galpón industrial"></option><option value="Mixto comercial-residencial"></option><option value="Mixto comercial-industrial"></option><option value="Hotel"></option></datalist><div class="type-note">Seleccione una tipología de la tabla o escriba libremente el tipo de inmueble. La vida útil puede introducirse de forma independiente.</div></div><div class="field"><label>Área de construcción · Ac (m²)</label><input id="ac" type="text" inputmode="decimal" value="102,55" data-decimals="2" autocomplete="off"></div><div class="field"><label>Área de terreno · At (m²)</label><input id="at" type="text" inputmode="decimal" value="212,42" data-decimals="2" autocomplete="off"></div><div class="field"><label>Costo unitario de construcción · CUC (UM/m²)</label><input id="cuc" type="text" inputmode="decimal" value="113.266,75" data-decimals="2" autocomplete="off"></div><div class="field"><label>Edad aparente · ea (años)</label><input id="edad" type="number" value="3" step="0.1" min="0"></div><div class="field"><label>Vida útil · vu (años)</label><input id="vida" type="text" inputmode="decimal" value="60" data-decimals="2" autocomplete="off" aria-describedby="vidaRango"><div class="range-note" id="vidaRango">Rango tabulado para este tipo: —</div><div class="vida-actions"><button type="button" onclick="setVidaFromTable('min')">Usar mínimo</button><button type="button" onclick="setVidaFromTable('max')">Usar máximo</button><button type="button" onclick="document.getElementById('vida').focus()">Personalizar</button></div></div><div class="field"><label>Estado de conservación</label><select id="estado"><option value="0">1 · Óptimo · 0,00%</option><option value="0.0032">1,5 · Muy bueno · 0,32%</option><option value="0.0249" selected>2 · Bueno · 2,49%</option><option value="0.0809">2,5 · Intermedio · 8,09%</option><option value="0.1817">3 · Regular · 18,17%</option><option value="0.3309">3,5 · Deficiente · 33,09%</option><option value="0.5249">4 · Malo · 52,49%</option><option value="0.7532">4,5 · Muy malo · 75,32%</option><option value="1">5 · Demolición · 100,00%</option></select></div><div class="field"><label>Fr · factor de rescate</label><input id="fr" type="number" value="0.90" step="0.01" min="0" max="1"></div><div class="field"><label>Ct · contribución del terreno</label><input id="ct" type="number" value="0.20" step="0.01" min="0"></div><div class="field"><label>FC · factor de comercialización</label><input id="fc" type="number" value="1.35" step="0.01" min="0"></div><div class="field"><label>Vme · máquinas y equipos (UM)</label><input id="vme" type="text" inputmode="decimal" value="0,00" data-decimals="2" autocomplete="off"></div><div class="vme-warning" id="vmeWarning"><strong>Vme supera el 10 % de Vcn.</strong> Según la condición del modelo, las máquinas y equipos no se incorporan al cálculo de Vi en este caso. El valor informado se muestra como referencia, pero se excluye de la fórmula.</div><div class="rossbox"><div><strong>Lectura Ross‑Heidecke</strong></div><div class="rossline"><span>α · factor Ross</span><b id="alpha">0,02625</b></div><div class="rossline"><span>c · PlusDep</span><b id="plusdep">2,49%</b></div><div class="rossline"><span>δ · depreciación total</span><b id="delta">0,05048</b></div></div><div class="calc-actions"><button id="calcBtn" class="btn primary" style="width:100%;justify-content:center" type="button">Calcular valor inmobiliario</button><button id="resetBtn" class="btn secondary" style="width:100%;justify-content:center" type="button">Restablecer datos</button><button id="printBtn" class="btn secondary print-btn" style="width:100%;justify-content:center" type="button">Imprimir resultados</button></div><div class="reset-note">Restablecer datos borra los valores introducidos y devuelve la calculadora a su configuración inicial.</div></div><div class="resultbox"><div class="print-header"><strong>Método Contributivo · Modelo Mandelblatt‑Camacaro</strong><div style="margin-top:4px">Fecha de impresión: <span id="printDate"></span></div></div><div class="kicker">Resultado integrado</div><div class="result" id="out">20.504.499,77 UM</div><div class="subresult" id="out2">Valor calculado con los parámetros seleccionados.</div><div class="metrics result-metrics" style="margin-top:20px"><div class="metric"><b>Vcn · Construcción nueva</b><small id="vcnOut">11.615.505,21 UM</small></div><div class="metric"><b>δ · Depreciación</b><small id="deltaOut">0,05050</small></div><div class="metric"><b>Vc · Construcción depreciada</b><small id="vcOut">11.087.618,40 UM</small></div><div class="metric"><b>Vuc · Valor unitario construcción</b><small id="vucOut">108.119,15 UM/m²</small></div><div class="metric"><b>Vt · Valor del terreno</b><small id="vtOut">4.100.899,95 UM</small></div><div class="metric"><b>Vut · Valor unitario terreno</b><small id="vutOut">19.305,62 UM/m²</small></div><div class="metric"><b>Vui · Valor unitario inmueble</b><small id="vuiOut">199.946,37 UM/m²</small></div></div></div></div><div class="bar-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Componentes del valor</div><h3 style="margin:8px 0 5px;font-size:22px">Terreno, construcción, máquinas y equipos y valor actual</h3><p style="margin:0;font-size:14px;color:var(--muted)">Comparación visual de los principales componentes del valor del inmueble.</p></div><canvas id="componentChart" width="1000" height="420" aria-label="Diagrama de barras verticales del valor de la construcción nueva, construcción depreciada, máquinas y equipos, terreno y valor actual del inmueble"></canvas><div class="chart-meta"><span><i style="background:#78a8ff"></i> Terreno</span><span><i style="background:#16b8b5"></i> Construcción nueva</span><span><i style="background:#2fc5d1"></i> Construcción depreciada</span><span><i style="background:#8d6cff"></i> Máquinas y equipos (Vme)</span><span><i style="background:#4edfd7"></i> Valor actual</span></div></div><div class="chart-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Relación edad / vida útil</div><h3 style="margin:8px 0 5px;font-size:22px">Sensibilidad del valor actual del inmueble</h3><p style="margin:0;font-size:14px">La curva muestra cómo cambia <strong>Vi</strong> al aumentar la relación <strong>edad / vida útil</strong>, manteniendo constantes los demás parámetros introducidos en la calculadora.</p></div><canvas id="ageChart" width="1000" height="430" aria-label="Gráfica de relación edad vida útil y valor actual del inmueble"></canvas><div class="chart-meta"><span><i></i> Vi estimado</span><span id="chartCurrent">Punto actual: —</span></div></div></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+
+<style>.formbox select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #2a4766;background:#091625;color:var(--ink);font:inherit}.rossbox{margin:14px 0;padding:14px;border:1px solid rgba(80,227,194,.22);background:rgba(22,200,196,.055);border-radius:15px}.rossline{display:flex;justify-content:space-between;gap:15px;padding:5px 0;color:var(--muted);font-size:13px}.rossline b{color:var(--accent)} .range-note{font-size:11px;color:#89a0b5;margin-top:4px}.vida-actions{display:flex;gap:7px;margin-top:7px;flex-wrap:wrap}.vida-actions button{padding:6px 9px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#cfe1f5;font:700 11px inherit;cursor:pointer}.vida-actions button:hover{border-color:rgba(22,200,196,.45);color:var(--accent)}.vme-warning{display:none;margin-top:12px;color:#ffd98a;background:rgba(255,200,87,.08);border:1px solid rgba(255,200,87,.28);padding:12px 14px;border-radius:13px;font-size:13px}.vme-warning strong{color:#ffe7aa}.bar-card{margin-top:20px;border:1px solid var(--line);border-radius:22px;padding:22px;background:rgba(13,27,45,.82)}#componentChart{width:100%;height:auto;display:block;background:linear-gradient(180deg,rgba(22,200,196,.03),rgba(255,255,255,.01));border-radius:16px;border:1px solid var(--line)}.result-metrics{display:grid;grid-template-columns:1fr;gap:9px;margin-top:20px}.result-metrics .metric{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:12px 14px}.result-metrics .metric b{margin:0}.result-metrics .metric small{font-size:12px;text-align:right;color:#c8d7e8}@media(max-width:560px){.result-metrics .metric{display:block}.result-metrics .metric small{display:block;text-align:left;margin-top:4px}} .section-end{display:flex;justify-content:flex-end;margin-top:14px}.back-home{font-size:12px;padding:9px 13px;background:rgba(255,255,255,.025)}
+.calc-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:4px}.reset-note{font-size:11px;color:#89a0b5;margin-top:7px}.type-note{font-size:11px;color:#89a0b5;margin-top:4px}.selectable-row{cursor:pointer;transition:background .15s ease}.selectable-row:hover{background:rgba(22,200,196,.08)}.selectable-row.selected{background:rgba(22,200,196,.13);outline:1px solid rgba(22,200,196,.22);outline-offset:-1px}.desc-field{margin-bottom:13px}.print-btn{background:rgba(255,255,255,.045)}
+@media(max-width:700px){.calc-actions{grid-template-columns:1fr}.split{grid-template-columns:1fr}.table-wrap{overflow-x:auto}.table-wrap table{min-width:0}.selectable-row{cursor:pointer}}
+@media print{body{background:#fff;color:#111}.nav,.hero,#metodo,#modelo,#tablas,#donar,footer,.formbox,.section-end,.bar-card,.chart-card,.source{display:none!important}.section#calculadora{display:block;padding:0}.section#calculadora>.wrap>.section-head{margin-bottom:12px}.section#calculadora .calc{display:block}.resultbox{border:none!important;background:#fff!important;padding:0!important;color:#111}.resultbox .kicker{color:#008f8c}.result{color:#008f8c}.subresult{color:#444}.result-metrics .metric{border:1px solid #ccc!important;background:#fff!important}.result-metrics .metric b,.result-metrics .metric small{color:#111!important}.print-header{display:block!important}}.print-header{display:none}
+
+/* Gráficos: lectura consistente en pantalla e impresión */
+.bar-card,#componentChart,.chart-card,#ageChart{break-inside:avoid;page-break-inside:avoid}
+@media print{#componentChart,#ageChart{width:100% !important;height:auto !important;background:#fff !important;border:1px solid #c9d1da !important}.bar-card,.chart-card{background:#fff !important;border:1px solid #c9d1da !important;color:#111 !important}.bar-card .section-head,.chart-card .section-head{color:#111 !important}.chart-meta{color:#445 !important}}
+</style>
+
+<section class="section" id="donar"><div class="wrap"><div class="donation-box"><div><div class="kicker">Apoya la investigación</div><h2>Contribuye al desarrollo de herramientas de valuación</h2><p>Tu donación ayuda a mantener y ampliar aplicaciones académicas y profesionales relacionadas con el Método Contributivo, Ross‑Heidecke y el Modelo Mandelblatt‑Camacaro.</p></div><a class="btn primary donate-btn" href="https://paypal.me/spilimcurso" target="_blank" rel="noopener noreferrer">Donar <span>↗</span></a></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+
+</main>
+<footer><div class="wrap"><div>© Miguel Camacaro Pérez, M.Sc. · Página basada en el Capítulo 5 proporcionado por el usuario.</div><div style="margin-top:6px">Nota académica: las tablas y ejemplos se reproducen/resumen en el contexto y unidades del documento fuente; los factores deben investigarse y actualizarse conforme a las condiciones del mercado.</div></div></footer>
+<script>
+const fmt=v=>new Intl.NumberFormat('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+const f3=v=>Number(v).toFixed(5).replace('.',',');
+function parseLocaleNumber(value){
+  if(typeof value!=='string') return Number(value)||0;
+  let v=value.trim().replace(/\s/g,'');
+  if(!v) return 0;
+  // Formato esperado en la interfaz: punto para miles y coma para decimales.
+  // También acepta temporalmente formatos no agrupados durante la edición.
+  if(v.includes(',')){
+    v=v.replace(/\./g,'').replace(',','.');
+  } else {
+    // Sin coma se interpreta como entero agrupado con puntos (p.ej. 113.266)
+    // salvo que tenga un único punto seguido de 1-2 dígitos.
+    const m=v.match(/^(\d+)\.(\d{1,2})$/);
+    if(!m) v=v.replace(/\./g,'');
+  }
+  const x=parseFloat(v);
+  return Number.isFinite(x)?x:0;
+}
+function n(id){const x=parseLocaleNumber(document.getElementById(id).value);return Number.isFinite(x)?x:0;}
+function formatInputES(value, decimals=2){
+  return new Intl.NumberFormat('es-ES',{minimumFractionDigits:decimals,maximumFractionDigits:decimals}).format(value);
+}
+function normalizeLocalizedInput(el){
+  const decimals=parseInt(el.dataset.decimals||'2',10);
+  const value=parseLocaleNumber(el.value);
+  el.value=formatInputES(value,decimals);
+}
+function setupLocalizedInputs(){
+  document.querySelectorAll('input[data-decimals]').forEach(el=>{
+    el.addEventListener('focus',()=>{
+      // Facilita la edición mostrando la cifra sin separadores de miles.
+      const value=parseLocaleNumber(el.value);
+      el.value=String(value).replace('.',',');
+      el.select();
+    });
+    el.addEventListener('blur',()=>{normalizeLocalizedInput(el);});
+    el.addEventListener('change',()=>{normalizeLocalizedInput(el);});
+  });
+}
+
+const vidaUtilTabla={
+  unif_basica:[50,60], unif_media:[50,60], unif_alta:[60,75],
+  multi_basica:[50,60], multi_media:[50,60], multi_alta:[60,75],
+  local:[60,75], oficina:[60,75],
+  galpon_comercial:[50,60], galpon_industrial:[50,60],
+  mixto_cr:[60,75], mixto_ci:[60,75], hotel:[60,75]
+};
+function updateVidaUtilOptions(){
+  const key=typeKeyFromText(document.getElementById('tipo').value);
+  const vida=document.getElementById('vida');
+  if(key && vidaUtilTabla[key]){
+    const [min,max]=vidaUtilTabla[key];
+    const current=parseLocaleNumber(vida.value);
+    if(!current){ vida.value=formatInputES(max,2); }
+    vida.dataset.tableMin=String(min);
+    vida.dataset.tableMax=String(max);
+    document.getElementById('vidaRango').textContent=`Rango tabulado de referencia: ${min}–${max} años. Puede introducir una vida útil diferente.`;
+  }else{
+    delete vida.dataset.tableMin; delete vida.dataset.tableMax;
+    document.getElementById('vidaRango').textContent='Tipo personalizado: introduzca la vida útil que corresponda al inmueble.';
+  }
+}
+function setVidaFromTable(which){
+  const vida=document.getElementById('vida');
+  const val=Number(vida.dataset.tableMin||50);
+  const max=Number(vida.dataset.tableMax||60);
+  vida.value=formatInputES(which==='min'?val:max,2);
+}
+
+
+function recalcRoss(){
+  const ea=Math.max(0,n('edad')), vu=Math.max(1,n('vida')), c=Math.max(0,Math.min(1,parseFloat(document.getElementById('estado').value)||0));
+  const ratio=ea/vu;
+  const alpha=0.5*(ratio+ratio*ratio);
+  const delta=alpha+(1-alpha)*c;
+  document.getElementById('alpha').textContent=f3(alpha);
+  document.getElementById('plusdep').textContent=fmt(c*100)+'%';
+  document.getElementById('delta').textContent=f3(delta);
+  document.getElementById('deltaOut').textContent=f3(delta);
+  return {ea,vu,c,alpha,delta};
+}
+function currentInputs(){
+  const ross=recalcRoss();
+  return {
+    ...ross,
+    ac:Math.max(0,n('ac')),
+    at:Math.max(0,n('at')),
+    cuc:Math.max(0,n('cuc')),
+    fr:Math.max(0,Math.min(1,n('fr'))),
+    vme:Math.max(0,n('vme')),
+    ct:Math.max(0,n('ct')),
+    fc:Math.max(0,n('fc'))
+  };
+}
+function modelValue(delta, p){
+  const vcn=p.ac*p.cuc;
+  const den=1-p.ct*p.fc;
+  if(den===0) return NaN;
+  return ((vcn*(1-delta*p.fr)+p.vme)*p.fc)/den;
+}
+function calcRossModel(){
+  const p=currentInputs();
+  const vcn=p.ac*p.cuc;
+  const vmeLimit=0.10*vcn;
+  const vmeIncluded=p.vme<=vmeLimit+1e-9;
+  const vmeUsed=vmeIncluded?p.vme:0;
+  const modelParams={...p,vme:vmeUsed};
+  const vi=modelValue(p.delta,modelParams);
+  const vc=Number.isFinite(vcn)?vcn*(1-p.delta*p.fr):NaN;
+  const vt=Number.isFinite(vi)?p.ct*vi:NaN;
+  const vuc=p.ac>0&&Number.isFinite(vc)?vc/p.ac:NaN;
+  const vut=p.at>0&&Number.isFinite(vt)?vt/p.at:NaN;
+  const vui=p.ac>0&&Number.isFinite(vi)?vi/p.ac:NaN;
+  const warning=document.getElementById('vmeWarning');
+  if(warning){
+    warning.style.display=vmeIncluded?'none':'block';
+    if(!vmeIncluded){
+      warning.innerHTML=`<strong>Vme supera el 10 % de Vcn.</strong> Vme informado: <strong>${fmt(p.vme)} UM</strong>; límite de incorporación: <strong>${fmt(vmeLimit)} UM</strong>. En consecuencia, Vme se excluye de la fórmula de Vi.`;
+    }
+  }
+  document.getElementById('vcnOut').textContent=fmt(vcn)+' UM';
+  document.getElementById('vcOut').textContent=Number.isFinite(vc)?fmt(vc)+' UM':'Indefinido';
+  document.getElementById('vucOut').textContent=Number.isFinite(vuc)?fmt(vuc)+' UM/m²':'Indefinido';
+  document.getElementById('vtOut').textContent=Number.isFinite(vt)?fmt(vt)+' UM':'Indefinido';
+  document.getElementById('vutOut').textContent=Number.isFinite(vut)?fmt(vut)+' UM/m²':'Indefinido';
+  document.getElementById('vuiOut').textContent=Number.isFinite(vui)?fmt(vui)+' UM/m²':'Indefinido';
+  document.getElementById('out').textContent=Number.isFinite(vi)?fmt(vi)+' UM':'Indefinido';
+  document.getElementById('out2').textContent=vmeIncluded?'Resultado actualizado con la vida útil y el estado de conservación seleccionados.':'Resultado actualizado excluyendo Vme por superar el límite del 10 % de Vcn.';
+  const pdate=document.getElementById('printDate'); if(pdate) pdate.textContent=new Intl.DateTimeFormat('es-ES').format(new Date());
+  drawComponentChart({vcn,vc,vme:vmeIncluded?p.vme:0,vt,vi});
+  drawAgeChart(p);
+}
+
+function drawComponentChart(values, printMode=false){
+  const canvas=document.getElementById('componentChart');
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const W=canvas.width,H=canvas.height;
+  ctx.clearRect(0,0,W,H);
+  if(printMode){ctx.fillStyle='#ffffff';ctx.fillRect(0,0,W,H);}else{ctx.fillStyle='#0d1b2d';ctx.fillRect(0,0,W,H);}
+  const pad={l:94,r:34,t:44,b:96};
+  const pw=W-pad.l-pad.r, ph=H-pad.t-pad.b;
+  const items=[
+    {label:['Terreno'],value:values.vt,color:'#78a8ff'},
+    {label:['Construcción','nueva'],value:values.vcn,color:'#16b8b5'},
+    {label:['Construcción','depreciada'],value:values.vc,color:'#2fc5d1'},
+    {label:['Máquinas y','equipos (Vme)'],value:values.vme,color:'#8d6cff'},
+    {label:['Valor','actual'],value:values.vi,color:'#4edfd7'}
+  ];
+  const vals=items.map(x=>Number.isFinite(x.value)&&x.value>=0?x.value:0);
+  const max=Math.max(...vals,1)*1.18;
+  const y=v=>pad.t+ph-(v/max)*ph;
+  const fontFamily='Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+  ctx.font='12px '+fontFamily;
+  ctx.strokeStyle=printMode?'#d8dee6':'rgba(57,217,230,.12)';ctx.lineWidth=1;
+  for(let i=0;i<=5;i++){
+    const gy=pad.t+i*(ph/5);
+    ctx.beginPath();ctx.moveTo(pad.l,gy);ctx.lineTo(W-pad.r,gy);ctx.stroke();
+    const val=max-i*(max/5);
+    ctx.fillStyle=printMode?'#425466':'#8fa8be';
+    ctx.textAlign='right';ctx.fillText(formatCompact(val),pad.l-12,gy+4);
+  }
+  const slot=pw/items.length;
+  const bw=Math.min(126,slot*0.60);
+  items.forEach((item,i)=>{
+    const value=vals[i];
+    const bx=pad.l+slot*i+(slot-bw)/2;
+    const by=y(value);
+    const bh=pad.t+ph-by;
+    ctx.fillStyle=item.color;
+    roundRect(ctx,bx,by,bw,Math.max(bh,1),10);ctx.fill();
+    // White halo behind value improves both screen and print readability.
+    const label=fmt(value)+' UM';
+    ctx.font='700 13px '+fontFamily;ctx.textAlign='center';
+    const ty=Math.max(by-12,24);
+    ctx.fillStyle=printMode?'#111827':'#d8f7f6';
+    ctx.fillText(label,bx+bw/2,ty);
+    ctx.fillStyle=printMode?'#3c4a59':'#a9bfd2';ctx.font='700 12px '+fontFamily;
+    item.label.forEach((line,j)=>ctx.fillText(line,bx+bw/2,H-55+j*15));
+  });
+  ctx.textAlign='left';
+}
+
+function roundRect(ctx,x,y,w,h,r){
+  const rr=Math.min(r,w/2,h/2);
+  ctx.beginPath();
+  ctx.moveTo(x+rr,y);ctx.arcTo(x+w,y,x+w,y+h,rr);ctx.arcTo(x+w,y+h,x,y+h,rr);ctx.arcTo(x,y+h,x,y,rr);ctx.arcTo(x,y,x+w,y,rr);ctx.closePath();
+}
+
+let lastCalculatedParams=null;
+function drawAgeChart(p, printMode=false){
+  const vcn=p.ac*p.cuc;
+  const vmeUsed=p.vme <= (0.10*vcn + 1e-9) ? p.vme : 0;
+  const curveParams={...p,vme:vmeUsed};
+  lastCalculatedParams=curveParams;
+  const canvas=document.getElementById('ageChart');
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const W=canvas.width,H=canvas.height;
+  ctx.clearRect(0,0,W,H);
+  if(printMode){ctx.fillStyle='#ffffff';ctx.fillRect(0,0,W,H);}else{ctx.fillStyle='#0d1b2d';ctx.fillRect(0,0,W,H);}
+  const pad={l:112,r:48,t:38,b:62};
+  const pw=W-pad.l-pad.r, ph=H-pad.t-pad.b;
+  const c=Math.max(0,Math.min(1,curveParams.c));
+  const pts=[];
+  for(let i=0;i<=100;i++){
+    const ratio=i/100;
+    const alpha=0.5*(ratio+ratio*ratio);
+    const delta=alpha+(1-alpha)*c;
+    const vi=modelValue(delta,curveParams);
+    pts.push({ratio,vi});
+  }
+  const vals=pts.map(d=>d.vi).filter(Number.isFinite);
+  if(!vals.length) return;
+  let min=Math.min(...vals), max=Math.max(...vals);
+  if(min===max){min-=1;max+=1;}
+  const padVal=(max-min)*0.08; min=Math.max(0,min-padVal); max=max+padVal;
+  const x=ratio=>pad.l+ratio*pw;
+  const y=v=>pad.t+(max-v)/(max-min)*ph;
+  ctx.strokeStyle=printMode?'#d8dee6':'rgba(57,217,230,.12)';ctx.lineWidth=1;
+  ctx.font='12px Inter, system-ui, sans-serif';ctx.fillStyle=printMode?'#425466':'#8fa8be';
+  for(let i=0;i<=5;i++){
+    const gy=pad.t+i*(ph/5);
+    ctx.beginPath();ctx.moveTo(pad.l,gy);ctx.lineTo(W-pad.r,gy);ctx.stroke();
+    const val=max-i*(max-min)/5;
+    ctx.textAlign='right';ctx.fillText(formatCompact(val),pad.l-14,gy+4);
+  }
+  for(let i=0;i<=5;i++){
+    const ratio=i/5, gx=x(ratio);
+    ctx.beginPath();ctx.moveTo(gx,pad.t);ctx.lineTo(gx,H-pad.b);ctx.stroke();
+    ctx.textAlign='center';ctx.fillText(Math.round(ratio*100)+'%',gx,H-25);
+  }
+  ctx.fillStyle=printMode?'#344454':'#b8c9d9';ctx.font='700 12px Inter, system-ui, sans-serif';ctx.textAlign='center';
+  ctx.fillText('Relación edad / vida útil',W/2,H-8);
+  ctx.save();ctx.translate(24,H/2+20);ctx.rotate(-Math.PI/2);ctx.fillStyle=printMode?'#344454':'#9fb3c8';ctx.font='700 12px Inter, system-ui, sans-serif';ctx.textAlign='center';ctx.fillText('Valor actual del inmueble (UM)',0,0);ctx.restore();
+  ctx.strokeStyle=printMode?'#008f8c':'#16c8c4';ctx.lineWidth=4;ctx.lineJoin='round';ctx.lineCap='round';
+  ctx.beginPath();
+  pts.forEach((d,i)=>{const px=x(d.ratio), py=y(d.vi); if(i===0)ctx.moveTo(px,py); else ctx.lineTo(px,py);});
+  ctx.stroke();
+
+  const ratio=Math.max(0,Math.min(1,curveParams.ea/curveParams.vu));
+  const alpha=0.5*(ratio+ratio*ratio);
+  const delta=alpha+(1-alpha)*c;
+  const curr=modelValue(delta,curveParams);
+  const cx=x(ratio), cy=y(curr);
+
+  ctx.fillStyle=printMode?'#20bdb7':'#75f5ee';ctx.beginPath();ctx.arc(cx,cy,8,0,Math.PI*2);ctx.fill();
+  ctx.strokeStyle=printMode?'#ffffff':'#06151a';ctx.lineWidth=3;ctx.stroke();
+
+  // Se mantiene únicamente la referencia visual del punto actual.
+  ctx.font='700 12px Inter, system-ui, sans-serif';
+  ctx.textAlign='left';
+  ctx.fillStyle=printMode?'#111827':'#d8f7f6';
+  ctx.fillText('Actual',Math.min(cx+10,W-74),Math.max(cy-18,20));
+
+  const cc=document.getElementById('chartCurrent');
+  if(cc) cc.textContent='Punto actual señalado sobre la curva';
+}
+
+function formatCompact(v){
+  const abs=Math.abs(v);
+  if(abs>=1e9) return (v/1e9).toFixed(1)+'B';
+  if(abs>=1e6) return (v/1e6).toFixed(1)+'M';
+  if(abs>=1e3) return (v/1e3).toFixed(0)+'k';
+  return v.toFixed(0);
+}
+
+setupLocalizedInputs();
+const tipoEl=document.getElementById('tipo');
+const tipoLabels={
+  unif_basica:'Vivienda unifamiliar · Básica',
+  unif_media:'Vivienda unifamiliar · Media',
+  unif_alta:'Vivienda unifamiliar · Alta',
+  multi_basica:'Vivienda multifamiliar · Básica',
+  multi_media:'Vivienda multifamiliar · Media',
+  multi_alta:'Vivienda multifamiliar · Alta',
+  local:'Local comercial',
+  oficina:'Oficina',
+  galpon_comercial:'Galpón comercial',
+  galpon_industrial:'Galpón industrial',
+  mixto_cr:'Mixto comercial-residencial',
+  mixto_ci:'Mixto comercial-industrial',
+  hotel:'Hotel'
+};
+function typeKeyFromText(text){
+  const t=(text||'').trim().toLowerCase();
+  for(const [key,label] of Object.entries(tipoLabels)){if(label.toLowerCase()===t) return key;}
+  return null;
+}
+function typeLabelFromKey(key){return tipoLabels[key]||'';}
+tipoEl.addEventListener('input',()=>{updateVidaUtilOptions();highlightSelectedType();});
+function highlightSelectedType(){
+  const key=typeKeyFromText(tipoEl.value);
+  document.querySelectorAll('.selectable-row').forEach(r=>r.classList.toggle('selected',r.dataset.type===key));
+}
+document.querySelectorAll('.selectable-row').forEach(row=>row.addEventListener('click',()=>{
+  const key=row.dataset.type;
+  tipoEl.value=typeLabelFromKey(key);
+  updateVidaUtilOptions();
+  highlightSelectedType();
+  document.getElementById('calculadora').scrollIntoView({behavior:'smooth'});
+}));
+updateVidaUtilOptions();
+highlightSelectedType();
+window.addEventListener('resize',()=>{if(lastCalculatedParams) {drawAgeChart(lastCalculatedParams);}});
+
+function clearResults(){
+  document.getElementById('out').textContent='—';
+  document.getElementById('out2').textContent='Complete los datos y pulse «Calcular valor inmobiliario».';
+  ['vcnOut','deltaOut','vcOut','vucOut','vtOut','vutOut','vuiOut'].forEach(id=>document.getElementById(id).textContent='—');
+  ['alpha','plusdep','delta'].forEach(id=>document.getElementById(id).textContent='—');
+  const warning=document.getElementById('vmeWarning'); if(warning) warning.style.display='none';
+  const c1=document.getElementById('componentChart'), c2=document.getElementById('ageChart');
+  [c1,c2].forEach(c=>{if(c){const ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height);}});
+  const cc=document.getElementById('chartCurrent'); if(cc) cc.textContent='Punto actual: —';
+}
+function resetForm(){
+  document.getElementById('tipo').value='Vivienda unifamiliar · Media';
+  document.getElementById('ac').value='102,55';
+  document.getElementById('at').value='212,42';
+  document.getElementById('cuc').value='113.266,75';
+  document.getElementById('edad').value='3';
+  document.getElementById('vida').value='60,00';
+  document.getElementById('estado').value='0.0249';
+  document.getElementById('fr').value='0.90';
+  document.getElementById('ct').value='0.20';
+  document.getElementById('fc').value='1.35';
+  document.getElementById('vme').value='0,00';
+  updateVidaUtilOptions();
+  clearResults();
+}
+function printResults(){
+  const printWindow=window.open('','_blank','width=1200,height=1200');
+  if(!printWindow) return;
+  const metrics=Array.from(document.querySelectorAll('#calculadora .result-metrics .metric')).map(m=>`<div class="metric"><strong>${m.querySelector('b')?.innerText||''}</strong><span>${m.querySelector('small')?.innerText||''}</span></div>`).join('');
+
+  // Render both charts to dedicated canvases with print-safe colors.
+  const compCanvas=document.createElement('canvas'); compCanvas.width=1400; compCanvas.height=500;
+  const ageCanvas=document.createElement('canvas'); ageCanvas.width=1400; ageCanvas.height=520;
+  const origComp=document.getElementById('componentChart');
+  const origAge=document.getElementById('ageChart');
+  const vcnPrint=parseLocaleNumber(document.getElementById('vcnOut')?.innerText||'0');
+  const vmeInPrint=parseLocaleNumber(document.getElementById('vme')?.value||'0');
+  const vmeUsedPrint=vmeInPrint <= (0.10*vcnPrint + 1e-9) ? vmeInPrint : 0;
+  const values={
+    vt:parseLocaleNumber(document.getElementById('vtOut')?.innerText||'0'),
+    vcn:vcnPrint,
+    vc:parseLocaleNumber(document.getElementById('vcOut')?.innerText||'0'),
+    vme:vmeUsedPrint,
+    vi:parseLocaleNumber(document.getElementById('out')?.innerText||'0')
+  };
+
+  const origCompId=origComp.id, origAgeId=origAge.id;
+  document.body.appendChild(compCanvas); document.body.appendChild(ageCanvas);
+  origComp.id='__componentChart_original'; origAge.id='__ageChart_original';
+  compCanvas.id='componentChart'; ageCanvas.id='ageChart';
+  drawComponentChart(values,true);
+  if(lastCalculatedParams) drawAgeChart(lastCalculatedParams,true);
+  compCanvas.id='__componentChart_print'; ageCanvas.id='__ageChart_print';
+  origComp.id=origCompId; origAge.id=origAgeId;
+  const chartImg=compCanvas.toDataURL('image/png');
+  const scatterImg=ageCanvas.toDataURL('image/png');
+  compCanvas.remove(); ageCanvas.remove();
+
+  printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>Resultados de valuación</title><style>
+  @page{size:A4 portrait;margin:7mm}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:Arial,Helvetica,sans-serif;color:#111;background:#fff;font-size:10px;line-height:1.2}
+  h1{font-size:18px;margin:0 0 2px;color:#19324a}
+  .main{font-size:24px;font-weight:800;color:#078f8a;margin:2px 0}
+  .muted{color:#555;font-size:9px}
+  .section-title{font-size:12px;margin:5px 0 3px;color:#19324a;font-weight:800}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+  .metric{border:1px solid #cfd6de;padding:5px 7px;border-radius:6px;display:flex;justify-content:space-between;gap:7px;background:#fff;min-height:29px;align-items:center}
+  .metric strong{font-size:8.7px}.metric span{font-size:8.7px;font-weight:700;text-align:right}
+  .chart-panel{border:1px solid #ccd4dd;border-radius:7px;padding:4px;margin-top:5px;break-inside:avoid;page-break-inside:avoid}
+  .chart-panel .label{font-size:8.7px;color:#516173;margin-bottom:2px}
+  .chart{width:100%;height:67mm;display:block}
+  .print-foot{margin-top:3px;color:#667;font-size:7.5px;text-align:right}
+  @media print{.chart-panel,.chart{break-inside:avoid;page-break-inside:avoid}}
+  </style></head><body>
+  <h1>Método Contributivo · Modelo Mandelblatt‑Camacaro</h1>
+  <div class="main">${document.getElementById('out')?.innerText||'—'}</div>
+  <div class="muted">${document.getElementById('out2')?.innerText||''}</div>
+  <div class="section-title">Resultados</div>
+  <div class="metrics">${metrics}</div>
+  <div class="chart-panel">
+    <div class="section-title">Componentes del valor</div>
+    <div class="label">Terreno · Construcción nueva · Construcción depreciada · Máquinas y equipos (Vme) · Valor actual</div>
+    <img class="chart" src="${chartImg}" alt="Componentes del valor">
+  </div>
+  <div class="chart-panel">
+    <div class="section-title">Sensibilidad del valor actual del inmueble</div>
+    <div class="label">Relación edad / vida útil · punto actual señalado sobre la curva</div>
+    ${lastCalculatedParams?`<img class="chart" src="${scatterImg}" alt="Sensibilidad del valor actual del inmueble">`:'<div style="height:67mm;display:flex;align-items:center;justify-content:center;color:#667">Realice un cálculo para generar la gráfica.</div>'}
+  </div>
+  <p class="print-foot">Impreso desde la aplicación Método Contributivo · Modelo Mandelblatt‑Camacaro</p>
+  </body></html>`);
+  printWindow.document.close();
+  printWindow.focus();
+  setTimeout(()=>printWindow.print(),450);
+}
+
+document.getElementById('calcBtn').addEventListener('click',()=>{calcRossModel();});
+document.getElementById('resetBtn').addEventListener('click',resetForm);
+document.getElementById('printBtn').addEventListener('click',printResults);
+clearResults();
+
+</script>
+</body></html>
