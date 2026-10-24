@@ -65,7 +65,13 @@ function parseLocaleNumber(value){
   const x=parseFloat(v);
   return Number.isFinite(x)?x:0;
 }
-function n(id){const x=parseLocaleNumber(document.getElementById(id).value);return Number.isFinite(x)?x:0;}
+function n(id){
+  const el=document.getElementById(id);
+  // Los <input type="number"> devuelven siempre el valor con punto decimal (p.ej. 0.3697).
+  // No deben pasar por parseLocaleNumber, que interpreta el punto como separador de miles.
+  const x=(el.type==='number')?parseFloat(el.value):parseLocaleNumber(el.value);
+  return Number.isFinite(x)?x:0;
+}
 function formatInputES(value, decimals=2){
   return new Intl.NumberFormat('es-ES',{minimumFractionDigits:decimals,maximumFractionDigits:decimals}).format(value);
 }
@@ -144,7 +150,7 @@ function currentInputs(){
 function modelValue(delta, p){
   const vcn=p.ac*p.cuc;
   const den=1-p.ct*p.fc;
-  if(den===0) return NaN;
+  if(den<=0) return NaN; // Ct·FC debe ser < 1; de lo contrario el modelo no tiene sentido
   return ((vcn*(1-delta*p.fr)+p.vme)*p.fc)/den;
 }
 function calcRossModel(){
