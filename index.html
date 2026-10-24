@@ -29,7 +29,7 @@
 <tr class="selectable-row" data-type="unif_basica" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Básica</td><td class="range">5%</td><td class="range">10%</td><td>1,20</td><td>1,25</td></tr><tr class="selectable-row" data-type="unif_media" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Media</td><td class="range">10%</td><td class="range">20%</td><td>1,25</td><td>1,35</td></tr><tr class="selectable-row" data-type="unif_alta" title="Seleccionar esta tipología"><td>Vivienda unifamiliar · Alta</td><td class="range">20%</td><td class="range">40%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="multi_basica" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Básica</td><td class="range">15%</td><td class="range">20%</td><td>1,25</td><td>1,30</td></tr><tr class="selectable-row" data-type="multi_media" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Media</td><td class="range">25%</td><td class="range">30%</td><td>1,30</td><td>1,35</td></tr><tr class="selectable-row" data-type="multi_alta" title="Seleccionar esta tipología"><td>Vivienda multifamiliar · Alta</td><td class="range">35%</td><td class="range">40%</td><td>1,40</td><td>1,45</td></tr><tr class="selectable-row" data-type="local" title="Seleccionar esta tipología"><td>Local comercial</td><td class="range">30%</td><td class="range">50%</td><td>1,40</td><td>1,50</td></tr><tr class="selectable-row" data-type="oficina" title="Seleccionar esta tipología"><td>Oficina</td><td class="range">25%</td><td class="range">40%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="galpon_comercial" title="Seleccionar esta tipología"><td>Galpón comercial</td><td class="range">20%</td><td class="range">35%</td><td>1,30</td><td>1,45</td></tr><tr class="selectable-row" data-type="galpon_industrial" title="Seleccionar esta tipología"><td>Galpón industrial</td><td class="range">10%</td><td class="range">20%</td><td>1,25</td><td>1,35</td></tr><tr class="selectable-row" data-type="mixto_cr" title="Seleccionar esta tipología"><td>Mixto comercial-residencial</td><td class="range">20%</td><td class="range">30%</td><td>1,30</td><td>1,40</td></tr><tr class="selectable-row" data-type="mixto_ci" title="Seleccionar esta tipología"><td>Mixto comercial-industrial</td><td class="range">20%</td><td class="range">35%</td><td>1,35</td><td>1,45</td></tr><tr class="selectable-row" data-type="hotel" title="Seleccionar esta tipología"><td>Hotel</td><td class="range">40%</td><td class="range">50%</td><td>1,50</td><td>1,60</td></tr>
 </tbody></table></div><div class="split" style="margin-top:20px"><div class="table-wrap"><div class="table-title">Tabla 2 · Criterio de Heideck / PlusDep</div><div class="table-subtitle">Factor de depreciación por condición utilizado en la versión actual de la aplicación.</div><table><thead><tr><th>Estado</th><th>Condición</th><th>PlusDep</th></tr></thead><tbody><tr><td>1</td><td>Óptimo</td><td>0,00%</td></tr><tr><td>1,5</td><td>Muy bueno</td><td>0,32%</td></tr><tr><td>2</td><td>Bueno</td><td>2,49%</td></tr><tr><td>2,5</td><td>Intermedio</td><td>8,09%</td></tr><tr><td>3</td><td>Regular</td><td>18,17%</td></tr><tr><td>3,5</td><td>Deficiente</td><td>33,09%</td></tr><tr><td>4</td><td>Malo</td><td>52,49%</td></tr><tr><td>4,5</td><td>Muy malo</td><td>75,32%</td></tr><tr><td>5</td><td>Demolición</td><td>100,00%</td></tr></tbody></table></div><div class="table-wrap"><div class="table-title">Tabla 3 · Vida útil de las construcciones</div><div class="table-subtitle">Rangos utilizados como referencia para la selección de la vida útil.</div><table><thead><tr><th>Tipo de inmueble</th><th>Vida útil mín.</th><th>Vida útil máx.</th></tr></thead><tbody><tr><td>Unifamiliar básica/media</td><td>50 años</td><td>60 años</td></tr><tr><td>Unifamiliar alta</td><td>60 años</td><td>75 años</td></tr><tr><td>Multifamiliar básica/media</td><td>50 años</td><td>60 años</td></tr><tr><td>Multifamiliar alta</td><td>60 años</td><td>75 años</td></tr><tr><td>Local comercial / Oficina</td><td>60 años</td><td>75 años</td></tr><tr><td>Galpón comercial/industrial</td><td>50 años</td><td>60 años</td></tr><tr><td>Mixto / Hotel</td><td>60 años</td><td>75 años</td></tr></tbody></table></div></div><p class="source" style="margin-top:14px">Fuente: elaboración y tablas reproducidas de forma resumida a partir del Capítulo 5.</p></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
 
-<section class="section alt" id="calculadora"><div class="wrap"><div class="section-head"><div class="kicker">04 · Calculadora Ross‑Heidecke + Mandelblatt‑Camacaro</div><h2>Ahora la depreciación se determina desde la inspección</h2><p>El usuario completa la <strong>edad aparente</strong>, la <strong>vida útil</strong> y el <strong>estado de conservación</strong>. La aplicación calcula automáticamente <strong>α (Ross)</strong>, toma el <strong>PlusDep</strong> de la tabla cargada y obtiene la depreciación <strong>δ = α + (1 − α)c</strong> antes de aplicarla al Modelo Mandelblatt‑Camacaro.</p></div><div class="calc"><div class="formbox"><div class="field"><label>Tipo de inmueble</label><input id="tipo" class="type-input" list="tipoOpciones" value="Vivienda unifamiliar · Media" autocomplete="off" placeholder="Seleccione de la tabla o escriba su tipo de inmueble"><datalist id="tipoOpciones"><option value="Vivienda unifamiliar · Básica"></option><option value="Vivienda unifamiliar · Media"></option><option value="Vivienda unifamiliar · Alta"></option><option value="Vivienda multifamiliar · Básica"></option><option value="Vivienda multifamiliar · Media"></option><option value="Vivienda multifamiliar · Alta"></option><option value="Local comercial"></option><option value="Oficina"></option><option value="Galpón comercial"></option><option value="Galpón industrial"></option><option value="Mixto comercial-residencial"></option><option value="Mixto comercial-industrial"></option><option value="Hotel"></option></datalist><div class="type-note">Seleccione una tipología de la tabla o escriba libremente el tipo de inmueble. La vida útil puede introducirse de forma independiente.</div></div><div class="field"><label>Área de construcción · Ac (m²)</label><input id="ac" type="text" inputmode="decimal" value="102,55" data-decimals="2" autocomplete="off"></div><div class="field"><label>Área de terreno · At (m²)</label><input id="at" type="text" inputmode="decimal" value="212,42" data-decimals="2" autocomplete="off"></div><div class="field"><label>Costo unitario de construcción · CUC (UM/m²)</label><input id="cuc" type="text" inputmode="decimal" value="113.266,75" data-decimals="2" autocomplete="off"></div><div class="field"><label>Edad aparente · ea (años)</label><input id="edad" type="number" value="3" step="0.1" min="0"></div><div class="field"><label>Vida útil · vu (años)</label><input id="vida" type="text" inputmode="decimal" value="60" data-decimals="2" autocomplete="off" aria-describedby="vidaRango"><div class="range-note" id="vidaRango">Rango tabulado para este tipo: —</div><div class="vida-actions"><button type="button" onclick="setVidaFromTable('min')">Usar mínimo</button><button type="button" onclick="setVidaFromTable('max')">Usar máximo</button><button type="button" onclick="document.getElementById('vida').focus()">Personalizar</button></div></div><div class="field"><label>Estado de conservación</label><select id="estado"><option value="0">1 · Óptimo · 0,00%</option><option value="0.0032">1,5 · Muy bueno · 0,32%</option><option value="0.0249" selected>2 · Bueno · 2,49%</option><option value="0.0809">2,5 · Intermedio · 8,09%</option><option value="0.1817">3 · Regular · 18,17%</option><option value="0.3309">3,5 · Deficiente · 33,09%</option><option value="0.5249">4 · Malo · 52,49%</option><option value="0.7532">4,5 · Muy malo · 75,32%</option><option value="1">5 · Demolición · 100,00%</option></select></div><div class="field"><label>Fr · factor de rescate</label><input id="fr" type="number" value="0.90" step="0.01" min="0" max="1"></div><div class="field"><label>Ct · contribución del terreno</label><input id="ct" type="number" value="0.20" step="0.01" min="0"></div><div class="field"><label>FC · factor de comercialización</label><input id="fc" type="number" value="1.35" step="0.01" min="0"></div><div class="field"><label>Vme · máquinas y equipos (UM)</label><input id="vme" type="text" inputmode="decimal" value="0,00" data-decimals="2" autocomplete="off"></div><div class="vme-warning" id="vmeWarning"><strong>Vme supera el 10 % de Vcn.</strong> Según la condición del modelo, las máquinas y equipos no se incorporan al cálculo de Vi en este caso. El valor informado se muestra como referencia, pero se excluye de la fórmula.</div><div class="rossbox"><div><strong>Lectura Ross‑Heidecke</strong></div><div class="rossline"><span>α · factor Ross</span><b id="alpha">0,02625</b></div><div class="rossline"><span>c · PlusDep</span><b id="plusdep">2,49%</b></div><div class="rossline"><span>δ · depreciación total</span><b id="delta">0,05048</b></div></div><div class="calc-actions"><button id="calcBtn" class="btn primary" style="width:100%;justify-content:center" type="button">Calcular valor inmobiliario</button><button id="resetBtn" class="btn secondary" style="width:100%;justify-content:center" type="button">Restablecer datos</button><button id="printBtn" class="btn secondary print-btn" style="width:100%;justify-content:center" type="button">Imprimir resultados</button></div><div class="reset-note">Restablecer datos borra los valores introducidos y devuelve la calculadora a su configuración inicial.</div></div><div class="resultbox"><div class="print-header"><strong>Método Contributivo · Modelo Mandelblatt‑Camacaro</strong><div style="margin-top:4px">Fecha de impresión: <span id="printDate"></span></div></div><div class="kicker">Resultado integrado</div><div class="result" id="out">20.504.499,77 UM</div><div class="subresult" id="out2">Valor calculado con los parámetros seleccionados.</div><div class="metrics result-metrics" style="margin-top:20px"><div class="metric"><b>Vcn · Construcción nueva</b><small id="vcnOut">11.615.505,21 UM</small></div><div class="metric"><b>δ · Depreciación</b><small id="deltaOut">0,05050</small></div><div class="metric"><b>Vc · Construcción depreciada</b><small id="vcOut">11.087.618,40 UM</small></div><div class="metric"><b>Vuc · Valor unitario construcción</b><small id="vucOut">108.119,15 UM/m²</small></div><div class="metric"><b>Vt · Valor del terreno</b><small id="vtOut">4.100.899,95 UM</small></div><div class="metric"><b>Vut · Valor unitario terreno</b><small id="vutOut">19.305,62 UM/m²</small></div><div class="metric"><b>Vui · Valor unitario inmueble</b><small id="vuiOut">199.946,37 UM/m²</small></div></div></div></div><div class="bar-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Componentes del valor</div><h3 style="margin:8px 0 5px;font-size:22px">Terreno, construcción, máquinas y equipos y valor actual</h3><p style="margin:0;font-size:14px;color:var(--muted)">Comparación visual de los principales componentes del valor del inmueble.</p></div><canvas id="componentChart" width="1000" height="420" aria-label="Diagrama de barras verticales del valor de la construcción nueva, construcción depreciada, máquinas y equipos, terreno y valor actual del inmueble"></canvas><div class="chart-meta"><span><i style="background:#78a8ff"></i> Terreno</span><span><i style="background:#16b8b5"></i> Construcción nueva</span><span><i style="background:#2fc5d1"></i> Construcción depreciada</span><span><i style="background:#8d6cff"></i> Máquinas y equipos (Vme)</span><span><i style="background:#4edfd7"></i> Valor actual</span></div></div><div class="chart-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Relación edad / vida útil</div><h3 style="margin:8px 0 5px;font-size:22px">Sensibilidad del valor actual del inmueble</h3><p style="margin:0;font-size:14px">La curva muestra cómo cambia <strong>Vi</strong> al aumentar la relación <strong>edad / vida útil</strong>, manteniendo constantes los demás parámetros introducidos en la calculadora.</p></div><canvas id="ageChart" width="1000" height="430" aria-label="Gráfica de relación edad vida útil y valor actual del inmueble"></canvas><div class="chart-meta"><span><i></i> Vi estimado</span><span id="chartCurrent">Punto actual: —</span></div></div></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
+<section class="section alt" id="calculadora"><div class="wrap"><div class="section-head"><div class="kicker">04 · Calculadora Ross‑Heidecke + Mandelblatt‑Camacaro</div><h2>Ahora la depreciación se determina desde la inspección</h2><p>El usuario completa la <strong>edad aparente</strong>, la <strong>vida útil</strong> y el <strong>estado de conservación</strong>. La aplicación calcula automáticamente <strong>α (Ross)</strong>, toma el <strong>PlusDep</strong> de la tabla cargada y obtiene la depreciación <strong>δ = α + (1 − α)c</strong> antes de aplicarla al Modelo Mandelblatt‑Camacaro.</p></div><div class="calc"><div class="formbox"><div class="kicker" style="margin-bottom:14px">Datos para el Cálculo del Valor del Inmueble</div><div class="field"><label>Tipo de inmueble</label><select id="tipo" class="type-input"><option value="unif_basica">Vivienda unifamiliar · Básica</option><option value="unif_media" selected>Vivienda unifamiliar · Media</option><option value="unif_alta">Vivienda unifamiliar · Alta</option><option value="multi_basica">Vivienda multifamiliar · Básica</option><option value="multi_media">Vivienda multifamiliar · Media</option><option value="multi_alta">Vivienda multifamiliar · Alta</option><option value="local">Local comercial</option><option value="oficina">Oficina</option><option value="galpon_comercial">Galpón comercial</option><option value="galpon_industrial">Galpón industrial</option><option value="mixto_cr">Mixto comercial-residencial</option><option value="mixto_ci">Mixto comercial-industrial</option><option value="hotel">Hotel</option><option value="custom">Otro · personalizado</option></select><input id="tipoCustom" class="type-input" type="text" placeholder="Escriba su tipo de inmueble" autocomplete="off" style="display:none;margin-top:8px"><div class="type-note">Al elegir una tipología, Ct, FC y la vida útil se cargan desde las tablas y pueden modificarse. Elija «Otro · personalizado» para escribir su propio tipo.</div></div><div class="field"><label>Valor sugerido dentro del rango tabulado</label><select id="nivel" class="type-input"><option value="min">Mínimo</option><option value="mid" selected>Punto medio</option><option value="max">Máximo</option></select></div><div class="field"><label>Área de construcción · Ac (m²)</label><input id="ac" type="text" inputmode="decimal" value="102,55" data-decimals="2" autocomplete="off"></div><div class="field"><label>Área de terreno · At (m²)</label><input id="at" type="text" inputmode="decimal" value="212,42" data-decimals="2" autocomplete="off"></div><div class="field"><label>Costo unitario de construcción · CUC (UM/m²)</label><input id="cuc" type="text" inputmode="decimal" value="113.266,75" data-decimals="2" autocomplete="off"></div><div class="field"><label>Edad aparente · ea (años)</label><input id="edad" type="text" inputmode="decimal" value="3" data-decimals="2" data-plain="1" autocomplete="off"></div><div class="field"><label>Vida útil · vu (años)</label><input id="vida" type="text" inputmode="decimal" value="60" data-decimals="2" autocomplete="off" aria-describedby="vidaRango"><div class="range-note" id="vidaRango">Rango tabulado para este tipo: —</div><div class="vida-actions"><button type="button" onclick="setVidaFromTable('min')">Usar mínimo</button><button type="button" onclick="setVidaFromTable('max')">Usar máximo</button><button type="button" onclick="document.getElementById('vida').focus()">Personalizar</button></div></div><div class="field"><label>Estado de conservación</label><select id="estado"><option value="0">1 · Óptimo · 0,00%</option><option value="0.0032">1,5 · Muy bueno · 0,32%</option><option value="0.0249" selected>2 · Bueno · 2,49%</option><option value="0.0809">2,5 · Intermedio · 8,09%</option><option value="0.1817">3 · Regular · 18,17%</option><option value="0.3309">3,5 · Deficiente · 33,09%</option><option value="0.5249">4 · Malo · 52,49%</option><option value="0.7532">4,5 · Muy malo · 75,32%</option><option value="1">5 · Demolición · 100,00%</option></select></div><div class="field"><label>Fr · factor de rescate</label><input id="fr" type="text" inputmode="decimal" value="0,90" data-decimals="2" data-plain="1" autocomplete="off"></div><div class="field"><label>Ct · contribución del terreno</label><input id="ct" type="text" inputmode="decimal" value="0,20" data-decimals="2" data-plain="1" autocomplete="off"><div class="range-note" id="ctRango"></div></div><div class="field"><label>FC · factor de comercialización</label><input id="fc" type="text" inputmode="decimal" value="1,35" data-decimals="2" data-plain="1" autocomplete="off"><div class="range-note" id="fcRango"></div></div><div class="field"><label>Vme · máquinas y equipos (UM)</label><input id="vme" type="text" inputmode="decimal" value="0,00" data-decimals="2" autocomplete="off"></div><div class="vme-warning" id="vmeWarning"><strong>Vme supera el 10 % de Vcn.</strong> Según la condición del modelo, las máquinas y equipos no se incorporan al cálculo de Vi en este caso. El valor informado se muestra como referencia, pero se excluye de la fórmula.</div><div class="rossbox"><div><strong>Lectura Ross‑Heidecke</strong></div><div class="rossline"><span>α · factor Ross</span><b id="alpha">0,02625</b></div><div class="rossline"><span>c · PlusDep</span><b id="plusdep">2,49%</b></div><div class="rossline"><span>δ · depreciación total</span><b id="delta">0,05048</b></div></div><div class="calc-actions"><button id="calcBtn" class="btn primary" style="width:100%;justify-content:center" type="button">Calcular valor inmobiliario</button><button id="resetBtn" class="btn secondary" style="width:100%;justify-content:center" type="button">Restablecer datos</button><button id="printBtn" class="btn secondary print-btn" style="width:100%;justify-content:center" type="button">Imprimir resultados</button></div><div class="reset-note">Restablecer datos borra los valores introducidos y devuelve la calculadora a su configuración inicial.</div></div><div class="resultbox"><div class="print-header"><strong>Método Contributivo · Modelo Mandelblatt‑Camacaro</strong><div style="margin-top:4px">Fecha de impresión: <span id="printDate"></span></div></div><div class="kicker">Resultados para el Valor del Inmueble y del Terreno · Vi</div><div class="result" id="out">20.504.499,77 UM</div><div class="subresult" id="out2">Valor calculado con los parámetros seleccionados.</div><div class="metrics result-metrics" style="margin-top:20px"><div class="metric"><b>Vcn · Construcción nueva</b><small id="vcnOut">—</small></div><div class="metric"><b>δ · Factor de depreciación</b><small id="deltaOut">—</small></div><div class="metric"><b>Vt · Valor del terreno</b><small id="vtOut">—</small></div><div class="metric"><b>Vc · Valor de la construcción</b><small id="vcOut">—</small></div><div class="metric"><b>Vme · Valor de máquinas y equipos</b><small id="vmeOut">—</small></div><div class="metric"><b>Vtcme · Tierra, construcción, máquinas y equipos</b><small id="vtcmeOut">—</small></div><div class="metric"><b>VUT · Valor unitario del terreno</b><small id="vutOut">—</small></div><div class="metric"><b>VUC · Valor unitario de construcción (Vi/Ac)</b><small id="vucOut">—</small></div></div></div></div><div class="bar-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Componentes del valor</div><h3 style="margin:8px 0 5px;font-size:22px">Terreno, construcción, máquinas y equipos y valor actual</h3><p style="margin:0;font-size:14px;color:var(--muted)">Comparación visual de los principales componentes del valor del inmueble.</p></div><canvas id="componentChart" width="1000" height="420" aria-label="Diagrama de barras verticales del valor de la construcción nueva, construcción depreciada, máquinas y equipos, terreno y valor actual del inmueble"></canvas><div class="chart-meta"><span><i style="background:#78a8ff"></i> Terreno</span><span><i style="background:#16b8b5"></i> Construcción nueva</span><span><i style="background:#2fc5d1"></i> Construcción depreciada</span><span><i style="background:#8d6cff"></i> Máquinas y equipos (Vme)</span><span><i style="background:#4edfd7"></i> Valor actual</span></div></div><div class="chart-card"><div class="section-head" style="margin-bottom:16px"><div class="kicker">Relación edad / vida útil</div><h3 style="margin:8px 0 5px;font-size:22px">Sensibilidad del valor actual del inmueble</h3><p style="margin:0;font-size:14px">La curva muestra cómo cambia <strong>Vi</strong> al aumentar la relación <strong>edad / vida útil</strong>, manteniendo constantes los demás parámetros introducidos en la calculadora.</p></div><canvas id="ageChart" width="1000" height="430" aria-label="Gráfica de relación edad vida útil y valor actual del inmueble"></canvas><div class="chart-meta"><span><i></i> Vi estimado</span><span id="chartCurrent">Punto actual: —</span></div></div></div><div class="section-end"><a class="btn secondary back-home" href="#top">Volver al inicio ↑</a></div></div></section>
 
 <style>.formbox select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #2a4766;background:#091625;color:var(--ink);font:inherit}.rossbox{margin:14px 0;padding:14px;border:1px solid rgba(80,227,194,.22);background:rgba(22,200,196,.055);border-radius:15px}.rossline{display:flex;justify-content:space-between;gap:15px;padding:5px 0;color:var(--muted);font-size:13px}.rossline b{color:var(--accent)} .range-note{font-size:11px;color:#89a0b5;margin-top:4px}.vida-actions{display:flex;gap:7px;margin-top:7px;flex-wrap:wrap}.vida-actions button{padding:6px 9px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#cfe1f5;font:700 11px inherit;cursor:pointer}.vida-actions button:hover{border-color:rgba(22,200,196,.45);color:var(--accent)}.vme-warning{display:none;margin-top:12px;color:#ffd98a;background:rgba(255,200,87,.08);border:1px solid rgba(255,200,87,.28);padding:12px 14px;border-radius:13px;font-size:13px}.vme-warning strong{color:#ffe7aa}.bar-card{margin-top:20px;border:1px solid var(--line);border-radius:22px;padding:22px;background:rgba(13,27,45,.82)}#componentChart{width:100%;height:auto;display:block;background:linear-gradient(180deg,rgba(22,200,196,.03),rgba(255,255,255,.01));border-radius:16px;border:1px solid var(--line)}.result-metrics{display:grid;grid-template-columns:1fr;gap:9px;margin-top:20px}.result-metrics .metric{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:12px 14px}.result-metrics .metric b{margin:0}.result-metrics .metric small{font-size:12px;text-align:right;color:#c8d7e8}@media(max-width:560px){.result-metrics .metric{display:block}.result-metrics .metric small{display:block;text-align:left;margin-top:4px}} .section-end{display:flex;justify-content:flex-end;margin-top:14px}.back-home{font-size:12px;padding:9px 13px;background:rgba(255,255,255,.025)}
 .calc-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:4px}.reset-note{font-size:11px;color:#89a0b5;margin-top:7px}.type-note{font-size:11px;color:#89a0b5;margin-top:4px}.selectable-row{cursor:pointer;transition:background .15s ease}.selectable-row:hover{background:rgba(22,200,196,.08)}.selectable-row.selected{background:rgba(22,200,196,.13);outline:1px solid rgba(22,200,196,.22);outline-offset:-1px}.desc-field{margin-bottom:13px}.print-btn{background:rgba(255,255,255,.045)}
@@ -46,8 +46,8 @@
 </main>
 <footer><div class="wrap"><div>© Miguel Camacaro Pérez, M.Sc. · Página basada en el Capítulo 5 proporcionado por el usuario.</div><div style="margin-top:6px">Nota académica: las tablas y ejemplos se reproducen/resumen en el contexto y unidades del documento fuente; los factores deben investigarse y actualizarse conforme a las condiciones del mercado.</div></div></footer>
 <script>
-const fmt=v=>new Intl.NumberFormat('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
-const f3=v=>Number(v).toFixed(5).replace('.',',');
+const fmt=v=>new Intl.NumberFormat('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+const f3=v=>fmt(Number(v));
 function parseLocaleNumber(value){
   if(typeof value!=='string') return Number(value)||0;
   let v=value.trim().replace(/\s/g,'');
@@ -65,31 +65,35 @@ function parseLocaleNumber(value){
   const x=parseFloat(v);
   return Number.isFinite(x)?x:0;
 }
+function parseField(el){
+  const v=(el.value||'').trim().replace(/\s/g,'');
+  if(!v) return 0;
+  if(el.dataset.plain==='1'){const x=parseFloat(v.replace(',','.'));return Number.isFinite(x)?x:0;}
+  return parseLocaleNumber(v);
+}
+// Se usa SIEMPRE la cifra completa guardada en data-raw (todos los decimales); en pantalla solo se muestran 2.
 function n(id){
   const el=document.getElementById(id);
-  // Los <input type="number"> devuelven siempre el valor con punto decimal (p.ej. 0.3697).
-  // No deben pasar por parseLocaleNumber, que interpreta el punto como separador de miles.
-  const x=(el.type==='number')?parseFloat(el.value):parseLocaleNumber(el.value);
+  const x=el.dataset.raw!==undefined?Number(el.dataset.raw):parseField(el);
   return Number.isFinite(x)?x:0;
 }
 function formatInputES(value, decimals=2){
-  return new Intl.NumberFormat('es-ES',{minimumFractionDigits:decimals,maximumFractionDigits:decimals}).format(value);
+  return new Intl.NumberFormat('de-DE',{minimumFractionDigits:decimals,maximumFractionDigits:decimals}).format(value);
 }
-function normalizeLocalizedInput(el){
-  const decimals=parseInt(el.dataset.decimals||'2',10);
-  const value=parseLocaleNumber(el.value);
-  el.value=formatInputES(value,decimals);
+function setField(id,num){
+  const el=document.getElementById(id);
+  const dec=parseInt(el.dataset.decimals||'2',10);
+  el.dataset.raw=String(num);
+  el.value=formatInputES(num,dec);
 }
 function setupLocalizedInputs(){
   document.querySelectorAll('input[data-decimals]').forEach(el=>{
-    el.addEventListener('focus',()=>{
-      // Facilita la edición mostrando la cifra sin separadores de miles.
-      const value=parseLocaleNumber(el.value);
-      el.value=String(value).replace('.',',');
-      el.select();
-    });
-    el.addEventListener('blur',()=>{normalizeLocalizedInput(el);});
-    el.addEventListener('change',()=>{normalizeLocalizedInput(el);});
+    const dec=parseInt(el.dataset.decimals||'2',10);
+    el.dataset.raw=String(parseField(el));
+    el.value=formatInputES(Number(el.dataset.raw),dec);
+    el.addEventListener('focus',()=>{el.value=String(el.dataset.raw).replace('.',',');el.select();});
+    el.addEventListener('input',()=>{el.dataset.raw=String(parseField(el));});
+    el.addEventListener('blur',()=>{el.value=formatInputES(Number(el.dataset.raw),dec);});
   });
 }
 
@@ -100,28 +104,46 @@ const vidaUtilTabla={
   galpon_comercial:[50,60], galpon_industrial:[50,60],
   mixto_cr:[60,75], mixto_ci:[60,75], hotel:[60,75]
 };
-function updateVidaUtilOptions(){
-  const key=typeKeyFromText(document.getElementById('tipo').value);
+// Tabla 1: [Ct mín, Ct máx, FC mín, FC máx]
+const tablaCtFc={
+  unif_basica:[.05,.10,1.20,1.25], unif_media:[.10,.20,1.25,1.35], unif_alta:[.20,.40,1.35,1.45],
+  multi_basica:[.15,.20,1.25,1.30], multi_media:[.25,.30,1.30,1.35], multi_alta:[.35,.40,1.40,1.45],
+  local:[.30,.50,1.40,1.50], oficina:[.25,.40,1.35,1.45],
+  galpon_comercial:[.20,.35,1.30,1.45], galpon_industrial:[.10,.20,1.25,1.35],
+  mixto_cr:[.20,.30,1.30,1.40], mixto_ci:[.20,.35,1.35,1.45], hotel:[.40,.50,1.50,1.60]
+};
+function currentTypeKey(){const k=document.getElementById('tipo').value;return vidaUtilTabla[k]?k:null;}
+function pick(min,max,nivel){const x=nivel==='min'?min:(nivel==='max'?max:(min+max)/2);return Math.round(x*1e6)/1e6;}
+// Carga automáticamente Ct, FC y vida útil desde las tablas; el usuario puede modificarlos después.
+function applyTable(){
+  const key=currentTypeKey();
+  document.getElementById('tipoCustom').style.display=key?'none':'block';
   const vida=document.getElementById('vida');
-  if(key && vidaUtilTabla[key]){
-    const [min,max]=vidaUtilTabla[key];
-    const current=parseLocaleNumber(vida.value);
-    if(!current){ vida.value=formatInputES(max,2); }
-    vida.dataset.tableMin=String(min);
-    vida.dataset.tableMax=String(max);
-    document.getElementById('vidaRango').textContent=`Rango tabulado de referencia: ${min}–${max} años. Puede introducir una vida útil diferente.`;
-  }else{
+  if(!key){
     delete vida.dataset.tableMin; delete vida.dataset.tableMax;
     document.getElementById('vidaRango').textContent='Tipo personalizado: introduzca la vida útil que corresponda al inmueble.';
+    document.getElementById('ctRango').textContent='Tipo personalizado: introduzca la contribución del terreno.';
+    document.getElementById('fcRango').textContent='Tipo personalizado: introduzca el factor de comercialización.';
+    return;
   }
+  const nivel=document.getElementById('nivel').value;
+  const [vmin,vmax]=vidaUtilTabla[key];
+  const [cmin,cmax,fmin,fmax]=tablaCtFc[key];
+  vida.dataset.tableMin=String(vmin); vida.dataset.tableMax=String(vmax);
+  setField('vida',pick(vmin,vmax,nivel));
+  setField('ct',pick(cmin,cmax,nivel));
+  setField('fc',pick(fmin,fmax,nivel));
+  document.getElementById('vidaRango').textContent='Rango tabulado: '+fmt(vmin)+' – '+fmt(vmax)+' años. Puede introducir un valor diferente.';
+  document.getElementById('ctRango').textContent='Rango tabulado: '+fmt(cmin*100)+' % – '+fmt(cmax*100)+' %. Puede introducir un valor diferente.';
+  document.getElementById('fcRango').textContent='Rango tabulado: '+fmt(fmin)+' – '+fmt(fmax)+'. Puede introducir un valor diferente.';
+  recalcRoss();
 }
+function updateVidaUtilOptions(){applyTable();}
 function setVidaFromTable(which){
   const vida=document.getElementById('vida');
-  const val=Number(vida.dataset.tableMin||50);
-  const max=Number(vida.dataset.tableMax||60);
-  vida.value=formatInputES(which==='min'?val:max,2);
+  setField('vida',Number(which==='min'?(vida.dataset.tableMin||50):(vida.dataset.tableMax||60)));
+  recalcRoss();
 }
-
 
 function recalcRoss(){
   const ea=Math.max(0,n('edad')), vu=Math.max(1,n('vida')), c=Math.max(0,Math.min(1,parseFloat(document.getElementById('estado').value)||0));
@@ -163,9 +185,8 @@ function calcRossModel(){
   const vi=modelValue(p.delta,modelParams);
   const vc=Number.isFinite(vcn)?vcn*(1-p.delta*p.fr):NaN;
   const vt=Number.isFinite(vi)?p.ct*vi:NaN;
-  const vuc=p.ac>0&&Number.isFinite(vc)?vc/p.ac:NaN;
+  const vuc=p.ac>0&&Number.isFinite(vi)?vi/p.ac:NaN; // VUC = Vi/Ac (comparable con precios de mercado, como en el Excel)
   const vut=p.at>0&&Number.isFinite(vt)?vt/p.at:NaN;
-  const vui=p.ac>0&&Number.isFinite(vi)?vi/p.ac:NaN;
   const warning=document.getElementById('vmeWarning');
   if(warning){
     warning.style.display=vmeIncluded?'none':'block';
@@ -175,10 +196,12 @@ function calcRossModel(){
   }
   document.getElementById('vcnOut').textContent=fmt(vcn)+' UM';
   document.getElementById('vcOut').textContent=Number.isFinite(vc)?fmt(vc)+' UM':'Indefinido';
+  document.getElementById('vmeOut').textContent=fmt(vmeUsed)+' UM';
+  const vtcme=(Number.isFinite(vt)&&Number.isFinite(vc))?vt+vc+vmeUsed:NaN;
+  document.getElementById('vtcmeOut').textContent=Number.isFinite(vtcme)?fmt(vtcme)+' UM':'Indefinido';
   document.getElementById('vucOut').textContent=Number.isFinite(vuc)?fmt(vuc)+' UM/m²':'Indefinido';
   document.getElementById('vtOut').textContent=Number.isFinite(vt)?fmt(vt)+' UM':'Indefinido';
   document.getElementById('vutOut').textContent=Number.isFinite(vut)?fmt(vut)+' UM/m²':'Indefinido';
-  document.getElementById('vuiOut').textContent=Number.isFinite(vui)?fmt(vui)+' UM/m²':'Indefinido';
   document.getElementById('out').textContent=Number.isFinite(vi)?fmt(vi)+' UM':'Indefinido';
   document.getElementById('out2').textContent=vmeIncluded?'Resultado actualizado con la vida útil y el estado de conservación seleccionados.':'Resultado actualizado excluyendo Vme por superar el límite del 10 % de Vcn.';
   const pdate=document.getElementById('printDate'); if(pdate) pdate.textContent=new Intl.DateTimeFormat('es-ES').format(new Date());
@@ -314,8 +337,8 @@ function drawAgeChart(p, printMode=false){
 
 function formatCompact(v){
   const abs=Math.abs(v);
-  if(abs>=1e9) return (v/1e9).toFixed(1)+'B';
-  if(abs>=1e6) return (v/1e6).toFixed(1)+'M';
+  if(abs>=1e9) return (v/1e9).toFixed(1).replace('.',',')+'B';
+  if(abs>=1e6) return (v/1e6).toFixed(1).replace('.',',')+'M';
   if(abs>=1e3) return (v/1e3).toFixed(0)+'k';
   return v.toFixed(0);
 }
@@ -343,26 +366,29 @@ function typeKeyFromText(text){
   return null;
 }
 function typeLabelFromKey(key){return tipoLabels[key]||'';}
-tipoEl.addEventListener('input',()=>{updateVidaUtilOptions();highlightSelectedType();});
+tipoEl.addEventListener('change',()=>{applyTable();highlightSelectedType();});
 function highlightSelectedType(){
-  const key=typeKeyFromText(tipoEl.value);
+  const key=currentTypeKey();
   document.querySelectorAll('.selectable-row').forEach(r=>r.classList.toggle('selected',r.dataset.type===key));
 }
 document.querySelectorAll('.selectable-row').forEach(row=>row.addEventListener('click',()=>{
   const key=row.dataset.type;
-  tipoEl.value=typeLabelFromKey(key);
+  tipoEl.value=key;
   updateVidaUtilOptions();
   highlightSelectedType();
   document.getElementById('calculadora').scrollIntoView({behavior:'smooth'});
 }));
 updateVidaUtilOptions();
 highlightSelectedType();
+document.getElementById('nivel').addEventListener('change',applyTable);
+['edad','vida'].forEach(id=>document.getElementById(id).addEventListener('input',recalcRoss));
+document.getElementById('estado').addEventListener('change',recalcRoss);
 window.addEventListener('resize',()=>{if(lastCalculatedParams) {drawAgeChart(lastCalculatedParams);}});
 
 function clearResults(){
   document.getElementById('out').textContent='—';
   document.getElementById('out2').textContent='Complete los datos y pulse «Calcular valor inmobiliario».';
-  ['vcnOut','deltaOut','vcOut','vucOut','vtOut','vutOut','vuiOut'].forEach(id=>document.getElementById(id).textContent='—');
+  ['vcnOut','deltaOut','vcOut','vucOut','vtOut','vutOut','vmeOut','vtcmeOut'].forEach(id=>document.getElementById(id).textContent='—');
   ['alpha','plusdep','delta'].forEach(id=>document.getElementById(id).textContent='—');
   const warning=document.getElementById('vmeWarning'); if(warning) warning.style.display='none';
   const c1=document.getElementById('componentChart'), c2=document.getElementById('ageChart');
@@ -370,18 +396,13 @@ function clearResults(){
   const cc=document.getElementById('chartCurrent'); if(cc) cc.textContent='Punto actual: —';
 }
 function resetForm(){
-  document.getElementById('tipo').value='Vivienda unifamiliar · Media';
-  document.getElementById('ac').value='102,55';
-  document.getElementById('at').value='212,42';
-  document.getElementById('cuc').value='113.266,75';
-  document.getElementById('edad').value='3';
-  document.getElementById('vida').value='60,00';
+  document.getElementById('tipo').value='unif_media';
+  document.getElementById('tipoCustom').value='';
+  document.getElementById('nivel').value='mid';
+  setField('ac',102.55); setField('at',212.42); setField('cuc',113266.75);
+  setField('edad',3); setField('fr',0.9); setField('vme',0);
   document.getElementById('estado').value='0.0249';
-  document.getElementById('fr').value='0.90';
-  document.getElementById('ct').value='0.20';
-  document.getElementById('fc').value='1.35';
-  document.getElementById('vme').value='0,00';
-  updateVidaUtilOptions();
+  applyTable(); highlightSelectedType();
   clearResults();
 }
 function printResults(){
@@ -458,6 +479,7 @@ function printResults(){
 }
 
 document.getElementById('calcBtn').addEventListener('click',()=>{calcRossModel();});
+calcRossModel();
 document.getElementById('resetBtn').addEventListener('click',resetForm);
 document.getElementById('printBtn').addEventListener('click',printResults);
 clearResults();
